@@ -28,24 +28,24 @@ import pandas as pd
 df=pd.read_csv("/content/SAMPLEIDS.csv")
 (df)
 ```
-   ![alt text](../1.png) 
+   ![alt text](1.png) 
 
    ```
    df.dropna(axis=0)
    ```
-   ![alt text](../2.png)
+   ![alt text](2.png)
 
    ```
    df.dropna(axis=1)
 
    ```
-   ![alt text](../3.png)
+   ![alt text](3.png)
 
    ```
    df2=df[df['TOTAL']>270]
    df2
    ```
-   ![alt text](../4.png)
+   ![alt text](4.png)
 
    ```
    df2=df[df['NAME'].str.startswith(('B','D'))& (df['TOTAL']>250)]
@@ -53,40 +53,40 @@ df=pd.read_csv("/content/SAMPLEIDS.csv")
    df.iloc[:4]
 
    ```
-   ![alt text](../5.png)
+   ![alt text](5.png)
 
    ```
    df.iloc[0:4,1:4]
    df.iloc[[1,3,5],[1,3]]
    ```
-   ![alt text](../6.png)
+   ![alt text](6.png)
 
    ```
    dff=df.fillna(0)
    dff
    ```
-   ![alt text](../7.png)
+   ![alt text](7.png)
 
    ```
    df['TOTAL'].fillna(value=df['TOTAL'].mean())
    ```
-   ![alt text](../8.png)
+   ![alt text](8.png)
 
    ```
    df.fillna(method='ffill')
    ```
-   ![alt text](../9.png)
+   ![alt text](9.png)
 
    ```
    df.fillna(method='bfill')
    ```
-   ![alt text](../10.png)
+   ![alt text](10.png)
 
    ```
    df['TOTAL'].fillna(value=df['TOTAL'].mean(),inplace=True)
    df
    ```
-   ![alt text](../11.png)
+   ![alt text](11.png)
 
    ```
     import pandas as pd
@@ -99,12 +99,12 @@ df=pd.read_csv("/content/SAMPLEIDS.csv")
     sns.boxplot(data=af)
 
    ```
-   ![alt text](../12.png)
+   ![alt text](12.png)
 
    ```
    sns.scatterplot(data=af)
    ```
-   ![alt text](../13.png)
+   ![alt text](13.png)
    ```
    q1=af.quantile(0.25)
     q2=af.quantile(0.5)
@@ -123,7 +123,7 @@ df=pd.read_csv("/content/SAMPLEIDS.csv")
 
    upper_bound
    ```
-   ![alt text](../14.png)
+   ![alt text](14.png)
 
    ```
     outliers=[x for x in age if x < lower_bound or x > upper_bound]
@@ -134,7 +134,7 @@ df=pd.read_csv("/content/SAMPLEIDS.csv")
     print("Upper_bound :",upper_bound)
     print("Outliers :",outliers)
    ```
-   ![alt text](../15.png)
+   ![alt text](15.png)
 
    ```
     import pandas as pd
@@ -151,7 +151,7 @@ df=pd.read_csv("/content/SAMPLEIDS.csv")
     af
 
    ```
-   ![alt text](../16.png)
+   ![alt text](16.png)
 
    ```
    data=[1,2,2,2,3,1,1,15,2,2,2,3,1,1,2]
@@ -168,6 +168,6 @@ df=pd.read_csv("/content/SAMPLEIDS.csv")
         outlier.append(i)
     print("outlier of dataset is",outlier)
    ```
-   ![alt text](../17.png)
+   ![alt text](17.png)
 # Result
           <<include your Result here>>
