@@ -170,4 +170,4 @@ df=pd.read_csv("/content/SAMPLEIDS.csv")
    ```
    ![alt text](17.png)
 # Result
-          <<include your Result here>>
+    Thus to read the given data and perform data cleaning and save the cleaned data to a file done successfully.
